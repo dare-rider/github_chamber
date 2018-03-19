@@ -43,4 +43,4 @@ gem 'omniauth-github'
 gem 'github_api'
 gem 'jquery-rails'
 gem 'bootstrap-datepicker-rails'
-gem 'dotenv'
+gem 'dotenv-rails', groups: [:development, :test]
