@@ -1,0 +1,55 @@
+div.container > div.row {
+  padding-top: 100px;
+}
+
+.fs-20 {
+  font-size: 20px
+}
+
+.right {
+  text-align: right;
+}
+
+div.profile-pic img{
+  height: 200px;
+  width: 200px;
+  border-radius: 5%;
+}
+
+div.name{
+  margin-top: 30px;
+  font-family: initial;
+  font-size: 20px;
+  color: #3289c8;
+}
+
+.pull-right{
+  float: right;
+}
+
+.mt20 {
+  margin-top: 20px;
+}
+
+.mt10 {
+  margin-top: 10px;
+}
+div.date-filter{
+  margin-top: 50px;
+  margin-left: -30px;
+}
+.commits-table{
+  margin-top: 125px;
+}
+
+.github-login-link > img{
+  width: 100%;
+}
+
+.back-link{
+  font-size: 20px;
+}
+
+.back-link:hover{
+  text-decoration: none;
+}

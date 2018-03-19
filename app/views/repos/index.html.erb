@@ -1,0 +1,15 @@
+<h2>Repositories</h2>
+<div class="repos mt20">
+<% @repos.each do|repo| %>
+  <div class="panel-group">
+    <div class="panel panel-info">
+      <div class="panel-heading">
+        <%= repo.name %>
+        <!-- <button type="button" class="btn btn-link pull-right">Commit History</button> -->
+        <%= link_to "Commit History", commits_repos_path(repo: repo.name), class: "btn btn-link pull-right" %>
+      </div>
+      <div class="panel-body"> <%= repo.description %></div>
+    </div>
+  </div>
+<% end %>
+</div>

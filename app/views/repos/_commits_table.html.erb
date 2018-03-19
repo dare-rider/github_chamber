@@ -1,0 +1,22 @@
+<div class="table-responsive commits-table">
+  <table class="table">
+    <thead>
+      <tr>
+        <th class="col-md-1">#</th>
+        <th class="col-md-3">Commiter</th>
+        <th class="col-md-6">Message</th>
+        <th class="col-md-2">Date</th>
+      </tr>
+    </thead>
+    <tbody>
+    <% @commits.each_with_index do|commit, index| %>
+      <tr>
+        <td><%= index + 1 %></td>
+        <td><%= committer_name(commit) %></td>
+        <td><%= message(commit) %></td>
+        <td><%= commit_date(commit) %></td>
+      </tr>
+    <% end %>
+    </tbody>
+  </table>
+</div>

@@ -1,0 +1,32 @@
+<%= link_to (content_tag(:span, "", class: "glyphicon glyphicon-circle-arrow-left")).to_s + " All repos", repos_path, class: "back-link" %>
+<h2>Repo: <%= @repo %></h2>
+<div class="date-filter">
+  <form method="get" accept-charset="utf-8">
+    <input type="hidden" name="repo" value="<%= @repo %>">
+    <div class="col-md-5">
+        <div class="col-md-4">
+          <label class="mt10">Start Date: </label>
+        </div>
+        <div class="col-md-8">
+          <input class="form-control start-date" name="start" type="text" readonly placeholder="yyyy/mm/dd" required>
+        </div>
+    </div>
+    <div class="col-md-5">
+      <div class="col-md-4">
+        <label class="mt10">End Date: </label>
+      </div>
+      <div class="col-md-8">
+        <input class="form-control end-date" name="end" type="text" readonly placeholder="yyyy/mm/dd" required>
+      </div>
+    </div>
+    <div class="col-md-2">
+      <button type="submit" class="btn btn-primary">Get Commits</button>
+    </div>
+  </form>
+</div>
+<% if @commits && @commits.any? %>
+  <%= render 'commits_table'%>
+<%end%>
+<% content_for :javascript_includes do%>
+  <%= javascript_include_tag 'repos'%>
+<%end%>
