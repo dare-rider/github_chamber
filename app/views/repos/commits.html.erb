@@ -1,3 +1,4 @@
+<%= Gon::Base.render_data %>
 <%= link_to (content_tag(:span, "", class: "glyphicon glyphicon-circle-arrow-left")).to_s + " All repos", repos_path, class: "back-link" %>
 <h2>Repo: <%= @repo %></h2>
 <div class="date-filter">
@@ -24,9 +25,10 @@
     </div>
   </form>
 </div>
+<div id="timeline1"></div>
 <% if @commits && @commits.any? %>
   <%= render 'commits_table'%>
 <%end%>
 <% content_for :javascript_includes do%>
-  <%= javascript_include_tag 'repos'%>
+  <%= javascript_include_tag 'lib/d3.v2.min', 'lib/timeknots-min', 'repos'%>
 <%end%>

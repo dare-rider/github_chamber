@@ -8,6 +8,7 @@ class ReposController < ApplicationController
   def commits
     @repo = params[:repo]
     @commits = all_commits(params[:repo], params[:start], params[:end])
+    gon.commits = @commits
   end
 
 end

@@ -53,3 +53,7 @@ div.date-filter{
 .back-link:hover{
   text-decoration: none;
 }
+
+div#timeline1 > div{
+  margin-left: -700px;
+}

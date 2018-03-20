@@ -12,9 +12,9 @@
     <% @commits.each_with_index do|commit, index| %>
       <tr>
         <td><%= index + 1 %></td>
-        <td><%= committer_name(commit) %></td>
-        <td><%= message(commit) %></td>
-        <td><%= commit_date(commit) %></td>
+        <td><%= commit[:committer] %></td>
+        <td><%= commit[:message] %></td>
+        <td><%= commit[:date] %></td>
       </tr>
     <% end %>
     </tbody>

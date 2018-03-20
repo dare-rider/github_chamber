@@ -11,4 +11,4 @@ Rails.application.config.assets.paths << Rails.root.join('node_modules')
 # Precompile additional assets.
 # application.js, application.css, and all non-JS/CSS in the app/assets
 # folder are already added.
-Rails.application.config.assets.precompile += %w( repos.js )
+Rails.application.config.assets.precompile += %w( lib/d3.v4.min.js lib/d3.v2.min.js lib/timeknots-min.js repos.js )

@@ -44,3 +44,4 @@ gem 'github_api'
 gem 'jquery-rails'
 gem 'bootstrap-datepicker-rails'
 gem 'dotenv-rails', groups: [:development, :test]
+gem 'gon'
