@@ -1,5 +1,4 @@
 class HomeController < ApplicationController
-  before_action :set_repo, only: [:commits]
 
   def index
     if user_signed_in?
