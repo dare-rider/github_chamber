@@ -1,6 +1,6 @@
 # Github Chamber
 
-A shord demo on github apis for authentifation, repository fetch, commit fetch and their timeline representarion.
+A short demo on github apis for authentifation, repository fetch, commit fetch and their timeline representarion.
 
 * Ruby version >2.3
 
